@@ -1,3 +1,4 @@
-# PKU Bionet 2018 webpage
+# Bio1898.com webpage
 
-View at https://rawgit.com/Yue-Jiang/pkubionet2018/master/index.html
+Fored from pkubionet2018 by Yue Jiang
+View at https://rawgit.com/liuyigh/bio1898/master/index.html
