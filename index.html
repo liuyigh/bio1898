@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.min.css">
   <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.css" />
 </head>
 
 <body data-spy="scroll" data-target="#site-nav">
@@ -40,7 +41,7 @@
 
         <!-- navigation menu -->
         <li><a data-scroll data-toggle="collapse" data-target=".navbar-collapse.in" href="#about">About</a></li>
-        <li><a data-scroll data-toggle="collapse" data-target=".navbar-collapse.in" href="#strategy">Strategies</a></li>
+        <li><a data-scroll data-toggle="collapse" data-target=".navbar-collapse.in" href="#strategies">Strategies</a></li>
         <li><a data-scroll data-toggle="collapse" data-target=".navbar-collapse.in" href="#funds">Funds</a></li>
         <li><a data-scroll data-toggle="collapse" data-target=".navbar-collapse.in" href="#people">People</a></li>
         <li><a data-scroll data-toggle="collapse" data-target=".navbar-collapse.in" href="#contact">Contact</a><li>
@@ -51,8 +52,8 @@
     </div>
   </div><!-- /.container -->
 </nav>
-
-<header id="site-header" class="site-header valign-center">
+<div id="fullpage">
+<header id="site-header" class="site-header valign-center section">
   <div class="intro">
     <div class="container">
       <div class="counter">
@@ -88,7 +89,7 @@
   </div><!-- /.container -->
 </section>
 
-<section id="facts" class="section bg-image-1 facts text-center">
+<section id="strategies" class="section bg-image-1 facts text-center">
   <div class="container">
     <div class="row">
       <div class="col-sm-3">
@@ -111,7 +112,7 @@
   </div><!-- container -->
 </section>
 
-<section id="location" class="section location">
+<section id="funds" class="section location">
   <div class="container">
     <div class="row">
       <div class="col-sm-4">
@@ -141,7 +142,7 @@
   </div>
 </section>
 
-<section id="schedule" class="section schedule">
+<section id="people" class="section schedule">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -176,7 +177,7 @@
   </div><!-- ./container -->
 </section>
 
-<section id="speakers" class="section speakers">
+<section id="contact" class="section speakers">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -237,7 +238,7 @@
   </div><!-- container -->
 </section>
 
-<section id="panelists" class="section panelists">
+<section id="news" class="section panelists">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -329,7 +330,7 @@
   </div><!-- container -->
 </section>
 
-<section id="sponsors" class="section partner">
+<section id="disclosures" class="section partner">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -444,7 +445,7 @@
         </div>
       </section>
     -->
-
+</div>
 
 <footer class="site-footer">
   <div class="container">
@@ -466,6 +467,13 @@
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="bower_components/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
 <script src="assets/js/main.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.min.js"></script>
+<script type="text/javascript">
+  var myFullpage = new fullpage('#fullpage', {
+    sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+    scrollBar: true
+  });
+</script>
 
 </body>
 </html>

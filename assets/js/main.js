@@ -13,7 +13,7 @@ $(window).load(function(){
 function handleTopNavAnimation() {
 	var top=$(window).scrollTop();
 
-	if(top>10){
+	if(top>50){
 		$('#site-nav').addClass('navbar-solid');
 	}
 	else{
