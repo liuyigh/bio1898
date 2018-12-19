@@ -37,16 +37,16 @@
     </div><!-- /.navbar-header -->
 
     <div class="collapse navbar-collapse" id="navbar-items">
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav navbar-right" id='menu'>
 
         <!-- navigation menu -->
-        <li><a data-scroll data-toggle="collapse" data-target=".navbar-collapse.in" href="#about">About</a></li>
-        <li><a data-scroll data-toggle="collapse" data-target=".navbar-collapse.in" href="#strategies">Strategies</a></li>
-        <li><a data-scroll data-toggle="collapse" data-target=".navbar-collapse.in" href="#funds">Funds</a></li>
-        <li><a data-scroll data-toggle="collapse" data-target=".navbar-collapse.in" href="#people">People</a></li>
-        <li><a data-scroll data-toggle="collapse" data-target=".navbar-collapse.in" href="#contact">Contact</a><li>
-        <li><a data-scroll data-toggle="collapse" data-target=".navbar-collapse.in" href="#news">News</a></li>
-        <li><a data-scroll data-toggle="collapse" data-target=".navbar-collapse.in" href="#disclosures">Disclosures</a></li>
+        <li data-menuanchor="about"><a data-scroll data-toggle="collapse" data-target=".navbar-collapse.in" href="#about">About</a></li>
+        <li data-menuanchor="strategies"><a data-scroll data-toggle="collapse" data-target=".navbar-collapse.in" href="#strategies">Strategies</a></li>
+        <li data-menuanchor="funds"><a data-scroll data-toggle="collapse" data-target=".navbar-collapse.in" href="#funds">Funds</a></li>
+        <li data-menuanchor="people"><a data-scroll data-toggle="collapse" data-target=".navbar-collapse.in" href="#people">People</a></li>
+        <li data-menuanchor="contact"><a data-scroll data-toggle="collapse" data-target=".navbar-collapse.in" href="#contact">Contact</a><li>
+        <li data-menuanchor="news"><a data-scroll data-toggle="collapse" data-target=".navbar-collapse.in" href="#news">News</a></li>
+        <li data-menuanchor="disclosures"><a data-scroll data-toggle="collapse" data-target=".navbar-collapse.in" href="#disclosures">Disclosures</a></li>
 
       </ul>
     </div>
@@ -445,9 +445,8 @@
         </div>
       </section>
     -->
-</div>
 
-<footer class="site-footer">
+<footer id="footer" class="section site-footer fp-auto-height">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -462,6 +461,8 @@
   </div>
 </footer>
 
+</div>
+
 <!-- script -->
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -471,7 +472,13 @@
 <script type="text/javascript">
   var myFullpage = new fullpage('#fullpage', {
     sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
-    scrollBar: true
+    scrollBar: true,
+    autoScrolling: true,
+    anchors: ['site-header' , 'about', 'strategies', 'funds','people','contact','news','disclosures','faq','footer'],
+    menu: '#menu'
+   //     navigation:true,
+   //     navigationTooltips: ['Welcome', 'About', 'Strategies', 'Funds','People','Contact','News','Disclosures'],
+   //     showActiveTooltip: true, 
   });
 </script>
 
